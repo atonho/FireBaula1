@@ -19,7 +19,10 @@ const routes: Routes = [
   { path: 'home-detail', loadChildren: './home-detail/home-detail.module#HomeDetailPageModule' },
 
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
-  { path: 'logoff', loadChildren: './logoff/logoff.module#LogoffPageModule' }
+  { path: 'logoff', loadChildren: './logoff/logoff.module#LogoffPageModule' },  { path: 'cadastro-cliente', loadChildren: './cadastro-cliente/cadastro-cliente.module#CadastroClientePageModule' },
+  { path: 'cliente-cadastro', loadChildren: './cliente-cadastro/cliente-cadastro.module#ClienteCadastroPageModule' },
+  { path: 'cliente-detalhes', loadChildren: './cliente-detalhes/cliente-detalhes.module#ClienteDetalhesPageModule' }
+
 ];
 
 @NgModule({

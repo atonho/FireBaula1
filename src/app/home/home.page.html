@@ -12,7 +12,9 @@
 <ion-content>
   <ul>
     <li *ngFor="let item of listaCliente">
-      {{item.nome}}
+      <ion-label>{{item.nome}} </ion-label>
+<ion-icon name="arrow-forward"slot='end'(click)='goPage(item.id)'></ion-icon>
+
     </li>
   </ul>
 </ion-content>

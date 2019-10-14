@@ -8,11 +8,12 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { AngularFireModule } from '@angular/fire';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { AngularFireStorageModule } from '@angular/fire/storage';
-import { AngularFireAuthModule } from '@angular/fire/auth';
 import { firebaseConfig } from 'src/environments/firebase.config';
+
+import { AngularFireModule} from '@angular/fire';
+import { AngularFirestoreModule} from '@angular/fire/firestore';
+import { AngularFireAuthModule} from '@angular/fire/auth';
+import { AngularFireStorageModule} from '@angular/fire/storage';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,8 +23,8 @@ import { firebaseConfig } from 'src/environments/firebase.config';
     IonicModule.forRoot(),
     AppRoutingModule,
     AngularFireModule.initializeApp(firebaseConfig), // Inicia Firebase com nossas conf
-    AngularFirestoreModule, // Banco de dados 
-    AngularFireAuthModule,  // Autenticação
+    AngularFirestoreModule, // Banco de dados
+    AngularFireAuthModule, // Autenticação
     AngularFireStorageModule // Armazenamento Arquivos
   ],
   providers: [
