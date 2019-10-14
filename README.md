@@ -1,2 +1,3 @@
 # FireBaula1
-Iniciando o firebase
+Iniciando projeto com Firebase - aula 01  em 09out2019.
+Atualizações...
